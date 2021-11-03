@@ -1,16 +1,18 @@
 import random
 numero = random.randint(0, 100)
+intento = 0
 intento = int(input("Adivina el número: "))
-intento = 1
-intento = True
-while intento == True:
+while intento != numero:
     intento = intento + 1
     if intento < numero:
         print("Demasiado pequeño")
-    elif intento == numero:
-        print("¡Has ganado!")
-    else:
+    if intento > numero:
         print("Demasiado grande ")
+    if intento == numero:
+        break
+
+if intento == numero:
+    print("¡Has ganado!")
 
 print("Has realizado ", intento, "intentos")
 
