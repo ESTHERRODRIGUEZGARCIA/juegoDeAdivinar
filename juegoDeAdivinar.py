@@ -9,15 +9,10 @@ while intento != numero :
     if intento < numero:
         print("Demasiado pequeño ")
         print("Introduce otro número: ")
-    elif intento > numero:
+    if intento > numero:
         print("Demasiado grande ")  
         print("Introduce otro número: ")
-    else:
-        print("¡Has ganado en tu primer intento!")
-        break      
-    print("Enhorabuena, has realizado ", intentosRealizados, "intentos")
-
-if intento == numero:
-    print("¡Has ganado en tu primer intento!")
-
-
+    if intento == numero:
+        break 
+#mensaje fuera
+print("Enhorabuena, has realizado ", intentosRealizados, "intentos")
