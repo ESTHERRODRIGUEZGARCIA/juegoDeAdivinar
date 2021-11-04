@@ -17,7 +17,7 @@ while intento != numero :
         intentosRealizados = intentosRealizados + 1
         print("Demasiado grande ")  
     intento = int(input("Introduce otro número: "))
-    
+
 
 #mensaje fuera
-print("Enhorabuena, has realizado ", intentosRealizados, "intentos")
+print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos")
