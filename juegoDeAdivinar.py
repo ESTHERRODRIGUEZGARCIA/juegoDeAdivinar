@@ -3,18 +3,21 @@ print("¡Empezamos!")
 import random
 numero = random.randint(0, 100)
 intentosRealizados = 0
-
+print("\n")
 intento = int(input("Adivina el número: "))
-
-while intento != numero :
-    intentosRealizados = intentosRealizados + 1   
+if intento == numero:
+    print("Enhorabuena, has acertado el número. ")
+while intento != numero : 
+    if intento < 0 or intento > 100:
+        print("Error; el numero debe estar entre el 0 y el 99 ")
     if intento < numero:
+        intentosRealizados = intentosRealizados + 1
         print("Demasiado pequeño ")
-        print("Introduce otro número: ")
     if intento > numero:
+        intentosRealizados = intentosRealizados + 1
         print("Demasiado grande ")  
-        print("Introduce otro número: ")
-    if intento == numero:
-        break 
+    intento = int(input("Introduce otro número: "))
+    
+
 #mensaje fuera
 print("Enhorabuena, has realizado ", intentosRealizados, "intentos")
