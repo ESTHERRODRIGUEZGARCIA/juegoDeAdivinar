@@ -8,6 +8,8 @@ El diagrama de flujo que tenemos en nuestro código es el siguiente:
 
 ![Diagrama de flujo adivine el número](https://ESTHERRODRIGUEZGARCIA\juegoDeAdivinar.juegodiagramadeflujo.jpg)
 
+![juegodiagrama](https://user-images.githubusercontent.com/91721860/140552829-a4279082-8366-4311-a1ba-e548e9a0d45a.PNG)
+
 
 ```print("¡Empezamos!")
 import random
