@@ -6,7 +6,7 @@ https://github.com/ESTHERRODRIGUEZGARCIA/juegoDeAdivinar.git
 Hemos resuelto un juego de adivinar un número entre el 0 y el 99
 El diagrama de flujo que tenemos en nuestro código es el siguiente:
 
-![Diagrama de flujo adivine el número](ESTHERRODRIGUEZGARCIA\juegoDeAdivinar.juegodiagramadeflujo.jpg)
+![Diagrama de flujo adivine el número](https://ESTHERRODRIGUEZGARCIA\juegoDeAdivinar.juegodiagramadeflujo.jpg)
 ```print("¡Empezamos!")
 import random
 numero = random.randint(0, 100)
