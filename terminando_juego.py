@@ -33,7 +33,7 @@ if nivel == 1:
 
         #mensaje fuera
         print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
-    
+
 elif nivel == 2:
     print("¡Empezamos!")
 
@@ -65,7 +65,7 @@ elif nivel == 3:
     import random
     numero = random.randint(0, 1000000)
     intentosRealizados = 0
-        intento = int(input("Adivine el número"))
+    intento = int(input("Adivine el número"))
 
     if intento == numero:
         print("Enhorabuena, has acertado el número. ")
