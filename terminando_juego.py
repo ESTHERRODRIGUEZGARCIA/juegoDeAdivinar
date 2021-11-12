@@ -31,7 +31,7 @@ if nivel == 1:
         if intento > numero:
             intentosRealizados = intentosRealizados + 1
             print("Demasiado grande ")  
-            intento = int(input("Introduce otro número: "))
+        intento = int(input("Introduce otro número: "))
     #mensaje fuera
     print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
 
@@ -55,7 +55,7 @@ elif nivel == 2:
         if intento > numero:
             intentosRealizados = intentosRealizados + 1
             print("Demasiado grande ")  
-            intento = int(input("Introduce otro número: "))
+        intento = int(input("Introduce otro número: "))
 
         #mensaje fuera
     print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
@@ -80,7 +80,7 @@ elif nivel == 3:
         if intento > numero:
             intentosRealizados = intentosRealizados + 1
             print("Demasiado grande ")  
-            intento = int(input("Introduce otro número: "))
+        intento = int(input("Introduce otro número: "))
 
 
         #mensaje fuera
@@ -106,7 +106,7 @@ else:
         if intento > numero:
             intentosRealizados = intentosRealizados + 1
             print("Demasiado grande ")  
-            intento = int(input("Introduce otro número: "))
+        intento = int(input("Introduce otro número: "))
 
         #mensaje fuera
     print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
