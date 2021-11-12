@@ -9,5 +9,43 @@ print("""
 
 nivel = int(input("Seleccione un nivel de dificultad, 1 2 3 o 4: "))
 
+if nivel == 1:
+    print("¡Empezamos!")
+
+    import random
+    numero = random.randint(0, 100)
+    intentosRealizados = 0
+    intento = int(input("Adivina el número: "))
+
+if intento < 0 or intento > 100:
+    intentosRealizados = intentosRealizados + 1
+    print("Error; el número debe estar entre el 0 y el 99 ")
+if intento < numero:
+    intentosRealizados = intentosRealizados + 1
+    print("Demasiado pequeño ")
+if intento > numero:
+    intentosRealizados = intentosRealizados + 1
+    print("Demasiado grande ")
+while intento != numero :
+    print("intenta adivinar el número: ")
+    intento = int(input()) 
+    if intento < 0 or intento > 100:
+        intentosRealizados = intentosRealizados + 1
+        print("Error; el número debe estar entre el 0 y el 99 ")
+    if intento < numero:
+        intentosRealizados = intentosRealizados + 1
+        print("Demasiado pequeño ")
+    if intento > numero:
+        intentosRealizados = intentosRealizados + 1
+        print("Demasiado grande ")
+
+        if intento == numero:
+            break
+    
+
+#mensaje fuera
+print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
+
+
 
 
