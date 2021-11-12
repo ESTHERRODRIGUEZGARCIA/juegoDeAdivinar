@@ -1,9 +1,10 @@
 
 print("""
-    1) nivel de dificultad simple (entre 0 y 100)
-    2) nivel de dificultad intermedio (entre 0 y 1.000)
-    3) nivel de dificultad avanzado (entre 0 y 1.000.000)
-    4) nivel de dificultad experto (entre 0 y 1.000.000.000.000)
+    Vamos a jugar al juego de adivinar un número. 
+    1) Nivel de dificultad simple (entre 0 y 100)
+    2) Nivel de dificultad intermedio (entre 0 y 1.000)
+    3) Nivel de dificultad avanzado (entre 0 y 1.000.000)
+    4) Nivel de dificultad experto (entre 0 y 1.000.000.000.000)
 """)
 nivel = int(input("Seleccione un nivel de dificultad, 1 2 3 o 4: "))
 
@@ -13,7 +14,7 @@ if nivel == 1:
     import random
     numero = random.randint(0, 100)
     intentosRealizados = 0
-    intento = int(input("Adivine el número"))
+    intento = int(input("Introduce un número: "))
 
     if intento == numero:
         print("Enhorabuena, has acertado el número. ")
@@ -40,7 +41,7 @@ elif nivel == 2:
     import random
     numero = random.randint(0, 1000)
     intentosRealizados = 0
-    intento = int(input("Adivine el número"))
+    intento = int(input("Introduce un número: "))
 
     if intento == numero:
         print("Enhorabuena, has acertado el número. ")
@@ -65,7 +66,7 @@ elif nivel == 3:
     import random
     numero = random.randint(0, 1000000)
     intentosRealizados = 0
-    intento = int(input("Adivine el número"))
+    intento = int(input("Introduce un número: "))
 
     if intento == numero:
         print("Enhorabuena, has acertado el número. ")
@@ -91,7 +92,7 @@ else:
     import random
     numero = random.randint(0, 1000000000000)
     intentosRealizados = 0
-    intento = int(input("Adivine el número"))
+    intento = int(input("Introduce un número: "))
 
     if intento == numero:
         print("Enhorabuena, has acertado el número. ")
