@@ -14,7 +14,7 @@ print("¡Empezamos!")
 import random
 numero = random.randint(0, 100)
 intentosRealizados = 0
-intento = int(input("Adivina el número: "))
+intento = int(input("Adivine el número"))
 
 if intento == numero:
     print("Enhorabuena, has acertado el número. ")
