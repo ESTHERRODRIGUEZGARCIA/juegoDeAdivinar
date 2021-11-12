@@ -6,7 +6,7 @@ print("""
     3) Nivel de dificultad avanzado (entre 0 y 1.000.000)
     4) Nivel de dificultad experto (entre 0 y 1.000.000.000.000)
 """)
-nivel = 1 =< 4
+
 nivel = int(input("Seleccione un nivel de dificultad, 1 2 3 o 4: "))
 
 if nivel == 1:
@@ -18,20 +18,21 @@ if nivel == 1:
     maxintento = 10
     intento = int(input("Introduce un número; tienes 10 intentos: "))
 
-    if intento == numero:
-        print("Enhorabuena, has acertado el número. ")
+if intento < 0 or intento > 100:
+    intentosRealizados = intentosRealizados + 1
+    print("Error; el número debe estar entre el 0 y el 99 ")
+if intento < numero:
+    intentosRealizados = intentosRealizados + 1
+    print("Demasiado pequeño ")
+if intento > numero:
+    intentosRealizados = intentosRealizados + 1
+    print("Demasiado grande ")
+while intento != numero :
+    print("Intenta adivinar el número: ")  
+intento = int(input())
+if intento == numero:
+        break
 
-    while intento != numero : 
-        if intento < 0 or intento > 100:
-            intentosRealizados = intentosRealizados + 1
-            print("Error; el número debe estar entre el 0 y el 99 ")
-        if intento < numero:
-            intentosRealizados = intentosRealizados + 1
-            print("Demasiado pequeño ")
-        if intento > numero:
-            intentosRealizados = intentosRealizados + 1
-            print("Demasiado grande ")  
-        intento = int(input("Introduce otro número: "))
     #mensaje fuera
     print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
 
