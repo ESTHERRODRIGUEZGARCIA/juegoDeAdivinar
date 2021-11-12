@@ -46,6 +46,7 @@ if nivel == 1:
             print("Has superado el máximo de intentos. El número era: ", numero)
         else:
             print("")
+            break
 
         if intento < 0 or intento > 100:
             intentosRealizados = intentosRealizados + 1
@@ -58,12 +59,8 @@ if nivel == 1:
             print("Demasiado grande. ")
 
             if intento == numero:
-                if intentosRealizados > maxintento:
-                    print("Has superado el máximo de intentos. El número era: ", numero)
-                else:
-                    print("")
-                break
+                    break
     
 
 #mensaje fuera
-    -print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
+    print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
