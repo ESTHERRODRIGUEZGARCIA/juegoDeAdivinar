@@ -10,103 +10,103 @@ nivel = int(input("Seleccione un nivel de dificultad, 1 2 3 o 4: "))
 if nivel == 1:
     print("¡Empezamos!")
 
-import random
-numero = random.randint(0, 100)
-intentosRealizados = 0
-intento = int(input("Adivine el número"))
+    import random
+    numero = random.randint(0, 100)
+    intentosRealizados = 0
+    intento = int(input("Adivine el número"))
 
-if intento == numero:
-    print("Enhorabuena, has acertado el número. ")
-while intento != numero : 
-    if intento < 0 or intento > 100:
-        intentosRealizados = intentosRealizados + 1
-        print("Error; el número debe estar entre el 0 y el 99 ")
-    if intento < numero:
-        intentosRealizados = intentosRealizados + 1
-        print("Demasiado pequeño ")
-    if intento > numero:
-        intentosRealizados = intentosRealizados + 1
-        print("Demasiado grande ")  
-    intento = int(input("Introduce otro número: "))
+    if intento == numero:
+        print("Enhorabuena, has acertado el número. ")
+
+    while intento != numero : 
+        if intento < 0 or intento > 100:
+            intentosRealizados = intentosRealizados + 1
+            print("Error; el número debe estar entre el 0 y el 99 ")
+        if intento < numero:
+            intentosRealizados = intentosRealizados + 1
+            print("Demasiado pequeño ")
+        if intento > numero:
+            intentosRealizados = intentosRealizados + 1
+            print("Demasiado grande ")  
+            intento = int(input("Introduce otro número: "))
 
 
-#mensaje fuera
-print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
-
-if nivel == 2:
+        #mensaje fuera
+        print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
+    
+elif nivel == 2:
     print("¡Empezamos!")
 
-import random
-numero = random.randint(0, 1000)
-intentosRealizados = 0
-intento = int(input("Adivine el número"))
+    import random
+    numero = random.randint(0, 1000)
+    intentosRealizados = 0
+    intento = int(input("Adivine el número"))
 
-if intento == numero:
-    print("Enhorabuena, has acertado el número. ")
-while intento != numero : 
-    if intento < 0 or intento > 1000:
-        intentosRealizados = intentosRealizados + 1
-        print("Error; el número debe estar entre el 0 y el 1000 ")
-    if intento < numero:
-        intentosRealizados = intentosRealizados + 1
-        print("Demasiado pequeño ")
-    if intento > numero:
-        intentosRealizados = intentosRealizados + 1
-        print("Demasiado grande ")  
-    intento = int(input("Introduce otro número: "))
+    if intento == numero:
+        print("Enhorabuena, has acertado el número. ")
+    while intento != numero : 
+        if intento < 0 or intento > 1000:
+            intentosRealizados = intentosRealizados + 1
+            print("Error; el número debe estar entre el 0 y el 1000 ")
+        if intento < numero:
+            intentosRealizados = intentosRealizados + 1
+            print("Demasiado pequeño ")
+        if intento > numero:
+            intentosRealizados = intentosRealizados + 1
+            print("Demasiado grande ")  
+            intento = int(input("Introduce otro número: "))
 
+        #mensaje fuera
+    print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
 
-#mensaje fuera
-print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
-
-if nivel == 3:
+elif nivel == 3:
     print("¡Empezamos!")
 
-import random
-numero = random.randint(0, 1000000)
-intentosRealizados = 0
-intento = int(input("Adivine el número"))
+    import random
+    numero = random.randint(0, 1000000)
+    intentosRealizados = 0
+        intento = int(input("Adivine el número"))
 
-if intento == numero:
-    print("Enhorabuena, has acertado el número. ")
-while intento != numero : 
-    if intento < 0 or intento > 1000000:
-        intentosRealizados = intentosRealizados + 1
-        print("Error; el número debe estar entre el 0 y el 1000000 ")
-    if intento < numero:
-        intentosRealizados = intentosRealizados + 1
-        print("Demasiado pequeño ")
-    if intento > numero:
-        intentosRealizados = intentosRealizados + 1
-        print("Demasiado grande ")  
-    intento = int(input("Introduce otro número: "))
+    if intento == numero:
+        print("Enhorabuena, has acertado el número. ")
+    while intento != numero : 
+        if intento < 0 or intento > 1000000000000:
+            intentosRealizados = intentosRealizados + 1
+            print("Error; el número debe estar entre el 0 y el 1000000000 ")
+        if intento < numero:
+            intentosRealizados = intentosRealizados + 1
+            print("Demasiado pequeño ")
+        if intento > numero:
+            intentosRealizados = intentosRealizados + 1
+            print("Demasiado grande ")  
+            intento = int(input("Introduce otro número: "))
 
 
-#mensaje fuera
-print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
+        #mensaje fuera
+    print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
 
-if nivel == 4:
+else:
     print("¡Empezamos!")
 
-import random
-numero = random.randint(0, 1000000000000)
-intentosRealizados = 0
-intento = int(input("Adivine el número"))
+    import random
+    numero = random.randint(0, 1000000000000)
+    intentosRealizados = 0
+    intento = int(input("Adivine el número"))
 
-if intento == numero:
-    print("Enhorabuena, has acertado el número. ")
-while intento != numero : 
-    if intento < 0 or intento > 1000000000000:
-        intentosRealizados = intentosRealizados + 1
-        print("Error; el número debe estar entre el 0 y el 1000000000000 ")
-    if intento < numero:
-        intentosRealizados = intentosRealizados + 1
-        print("Demasiado pequeño ")
-    if intento > numero:
-        intentosRealizados = intentosRealizados + 1
-        print("Demasiado grande ")  
-    intento = int(input("Introduce otro número: "))
+    if intento == numero:
+        print("Enhorabuena, has acertado el número. ")
+    while intento != numero : 
+        if intento < 0 or intento > 1000000000000:
+            intentosRealizados = intentosRealizados + 1
+            print("Error; el número debe estar entre el 0 y el 1000000000000 ")
+        if intento < numero:
+            intentosRealizados = intentosRealizados + 1
+            print("Demasiado pequeño ")
+        if intento > numero:
+            intentosRealizados = intentosRealizados + 1
+            print("Demasiado grande ")  
+            intento = int(input("Introduce otro número: "))
 
+        #mensaje fuera
+    print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
 
-#mensaje fuera
-print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
