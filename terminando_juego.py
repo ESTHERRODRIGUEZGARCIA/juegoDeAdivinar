@@ -6,6 +6,7 @@ print("""
     3) Nivel de dificultad avanzado (entre 0 y 1.000.000)
     4) Nivel de dificultad experto (entre 0 y 1.000.000.000.000)
 """)
+nivel = 1 =< 4
 nivel = int(input("Seleccione un nivel de dificultad, 1 2 3 o 4: "))
 
 if nivel == 1:
@@ -14,7 +15,8 @@ if nivel == 1:
     import random
     numero = random.randint(0, 100)
     intentosRealizados = 0
-    intento = int(input("Introduce un número: "))
+    maxintento = 10
+    intento = int(input("Introduce un número; tienes 10 intentos: "))
 
     if intento == numero:
         print("Enhorabuena, has acertado el número. ")
@@ -30,10 +32,8 @@ if nivel == 1:
             intentosRealizados = intentosRealizados + 1
             print("Demasiado grande ")  
             intento = int(input("Introduce otro número: "))
-
-
-        #mensaje fuera
-        print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
+    #mensaje fuera
+    print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
 
 elif nivel == 2:
     print("¡Empezamos!")
