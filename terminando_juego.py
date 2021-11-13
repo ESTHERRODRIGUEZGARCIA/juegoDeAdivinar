@@ -15,6 +15,33 @@ print("""
 """)
 
 nivel = int(input("Seleccione un nivel de dificultad, 1 2 3 o 4: \n "))
+
+if nivel < 1 or nivel > 4 and nivel != 5:
+    print("Error. Hay 4 posibles niveles. Seleccione de nuevo el nivel: ")
+if nivel ==1 or nivel == 4 or nivel == 2 or nivel == 3:
+    print("Correcto. ")
+if nivel == 5:
+    print("\nLo sentimos, nivel bloqueado temporalmente por falta de conocimientos.")
+while nivel < 1 or nivel > 4:
+    print("Introduce otro nivel: ")
+    nivel = int(input()) 
+    if nivel < 1 or nivel > 4:
+        print("Error, el número debe estar entre el 0 y el 4 ")
+    if nivel == 1 or nivel == 4 or nivel == 2 or nivel == 3:
+        print(" correcto")
+    if nivel == 5:
+        print("tontita no lo sabes hacer")
+            
+        if nivel ==1 or nivel == 4 or nivel == 2 or nivel == 3:
+                break
+if nivel ==1 or nivel == 4 or nivel == 2 or nivel == 3:
+    print(" ")
+
+
+
+
+
+
 if nivel > 4 and nivel != 5:
     print("\nError. Hay 4 posibles niveles. Seleccione de nuevo el nivel: ")
 if nivel < 1 :
