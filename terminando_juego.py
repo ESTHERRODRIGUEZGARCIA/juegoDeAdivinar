@@ -28,9 +28,9 @@ while nivel < 1 or nivel > 4:
     if nivel < 1 or nivel > 4:
         print("Error, el número debe estar entre el 0 y el 4 ")
     if nivel == 1 or nivel == 4 or nivel == 2 or nivel == 3:
-        print(" correcto")
+        print("Correcto. ")
     if nivel == 5:
-        print("tontita no lo sabes hacer")
+        print("Lo sentimos, nivel bloqueado temporalmente por falta de conocimientos.")
             
         if nivel ==1 or nivel == 4 or nivel == 2 or nivel == 3:
                 break
@@ -38,30 +38,6 @@ if nivel ==1 or nivel == 4 or nivel == 2 or nivel == 3:
     print(" ")
 
 
-
-
-
-
-if nivel > 4 and nivel != 5:
-    print("\nError. Hay 4 posibles niveles. Seleccione de nuevo el nivel: ")
-if nivel < 1 :
-    print("\nError. Hay 4 posibles niveles. Seleccione de nuevo el nivel: ")
-if nivel == 5:
-    print("\nLo sentimos, nivel bloqueado temporalmente por falta de conocimientos.")
-if nivel <= 4 or nivel >= 1:
-    print("")
-while nivel > 4 and nivel < 1:
-    if nivel > 4 and nivel != 5:
-        print("\nError. Hay 4 posibles niveles. Seleccione de nuevo el nivel: ")
-    elif nivel < 1 :
-        print("\nError. Hay 4 posibles niveles. Seleccione de nuevo el nivel: ")
-    elif nivel == 5:
-        print("\nLo sentimos, nivel bloqueado temporalmente por falta de conocimientos.")
-if nivel <= 4 or nivel >= 1:
-        break
-
-
-nivel = int(input(" 1 2 3 o 4: \n "))
 
 nombre= str(input("Introduce tu nombre: "))
 
