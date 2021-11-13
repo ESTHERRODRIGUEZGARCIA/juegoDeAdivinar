@@ -20,6 +20,9 @@ elif nivel < 1 :
 
 
 
+nombre= str(input("Introduce tu nombre: "))
+
+
 if nivel == 1:
     print("¡Empezamos! Has elegido el nivel simple")
 
@@ -58,3 +61,10 @@ if nivel == 1:
         print("Has superado el máximo de intentos. El número era: ", numero)
     else:
         print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
+
+
+
+from tabulate import tabulate
+
+table = [['Nombre', 'Nivel de dificultad', 'Intentos'], [nombre, nivel, intentosRealizados]]
+print(tabulate(table))
