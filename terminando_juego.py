@@ -33,11 +33,11 @@ if nivel == 1:
     intentosRealizados = 0
     maxintento = 25
     
-    intento = int(input("Adivine el número: \n"))
+    intento = int(input("Adivine el número, entre 0 y 100: \n"))
 
     if intento < 0 or intento > 100:
         intentosRealizados = intentosRealizados + 1
-        print("Error, el número debe estar entre el 0 y el 99 ")
+        print("Error, el número debe estar entre el 0 y el 100 ")
     if intento < numero:
         intentosRealizados = intentosRealizados + 1
         print("Demasiado pequeño. ")
@@ -49,7 +49,7 @@ if nivel == 1:
         intento = int(input()) 
         if intento < 0 or intento > 100:
             intentosRealizados = intentosRealizados + 1
-            print("Error, el número debe estar entre el 0 y el 99 ")
+            print("Error, el número debe estar entre el 0 y el 100 ")
         if intento < numero:
             intentosRealizados = intentosRealizados + 1
             print("Demasiado pequeño. ")
@@ -73,7 +73,7 @@ if nivel == 2:
     intentosRealizados = 0
     maxintento = 25
     
-    intento = int(input("Adivine el número: \n"))
+    intento = int(input("Adivine el número, entre 0 y 1000: \n"))
 
     if intento < 0 or intento > 1000:
         intentosRealizados = intentosRealizados + 1
@@ -113,11 +113,11 @@ if nivel == 3:
     intentosRealizados = 0
     maxintento = 25
     
-    intento = int(input("Adivine el número: \n"))
+    intento = int(input("Adivine el número, entre 0 y 1.000.000: \n"))
 
     if intento < 0 or intento > 1000000:
         intentosRealizados = intentosRealizados + 1
-        print("Error, el número debe estar entre el 0 y el 1000000 ")
+        print("Error, el número debe estar entre el 0 y el 1.000.000 ")
     if intento < numero:
         intentosRealizados = intentosRealizados + 1
         print("Demasiado pequeño. ")
@@ -127,9 +127,9 @@ if nivel == 3:
     while intento != numero and intentosRealizados < maxintento:
         print("Intenta adivinar el número: ")
         intento = int(input()) 
-        if intento < 0 or intento > 1000:
+        if intento < 0 or intento > 1000000:
             intentosRealizados = intentosRealizados + 1
-            print("Error, el número debe estar entre el 0 y el 1000000 ")
+            print("Error, el número debe estar entre el 0 y el 1.000.000 ")
         if intento < numero:
             intentosRealizados = intentosRealizados + 1
             print("Demasiado pequeño. ")
@@ -154,11 +154,11 @@ if nivel == 4:
     intentosRealizados = 0
     maxintento = 25
     
-    intento = int(input("Adivine el número: \n"))
+    intento = int(input("Adivine el número, entre 0 y 1.000.000.000.000: \n"))
 
     if intento < 0 or intento > 1000000000000:
         intentosRealizados = intentosRealizados + 1
-        print("Error, el número debe estar entre el 0 y el 1000000000000 ")
+        print("Error, el número debe estar entre el 0 y el 1.000.000.000.000 ")
     if intento < numero:
         intentosRealizados = intentosRealizados + 1
         print("Demasiado pequeño. ")
@@ -170,7 +170,7 @@ if nivel == 4:
         intento = int(input()) 
         if intento < 0 or intento > 1000000000000:
             intentosRealizados = intentosRealizados + 1
-            print("Error, el número debe estar entre el 0 y el 1000000000000 ")
+            print("Error, el número debe estar entre el 0 y el 1.000.000.000.000 ")
         if intento < numero:
             intentosRealizados = intentosRealizados + 1
             print("Demasiado pequeño. ")
