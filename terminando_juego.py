@@ -39,15 +39,9 @@ if nivel == 1:
     if intento > numero:
         intentosRealizados = intentosRealizados + 1
         print("Demasiado grande. ")
-    while intento != numero :
+    while intento != numero and intentosRealizados < maxintento:
         print("Intenta adivinar el número: ")
         intento = int(input()) 
-        if intentosRealizados > maxintento:
-            print("Has superado el máximo de intentos. El número era: ", numero)
-        else:
-            print("")
-            break
-
         if intento < 0 or intento > 100:
             intentosRealizados = intentosRealizados + 1
             print("Error, el número debe estar entre el 0 y el 99 ")
@@ -60,7 +54,8 @@ if nivel == 1:
 
             if intento == numero:
                     break
-    
+    if intentosRealizados == maxintento:
+        print("Has superado el máximo de intentos. El número era: ", numero)
 
 #mensaje fuera
     print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
