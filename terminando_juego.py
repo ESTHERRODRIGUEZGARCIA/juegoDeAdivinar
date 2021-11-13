@@ -26,7 +26,7 @@ nombre= str(input("Introduce tu nombre: "))
 
 
 if nivel == 1:
-    print("¡Empezamos! Has elegido el nivel SIMPLE")
+    print("\n¡Empezamos! Has elegido el nivel SIMPLE")
 
     import random
     numero = random.randint(0, 100)
@@ -43,7 +43,7 @@ if nivel == 1:
         print("Demasiado pequeño. El número es mayor que ", intento)
     if intento > numero:
         intentosRealizados = intentosRealizados + 1
-        print("Demasiado grande. El numero es menos que ", intento)
+        print("Demasiado grande. El numero es menor que ", intento)
     while intento != numero and intentosRealizados < maxintento:
         print("Intenta adivinar el número: ")
         intento = int(input()) 
@@ -66,7 +66,7 @@ if nivel == 1:
         
 
 if nivel == 2:
-    print("¡Empezamos! Has elegido el nivel INTERMEDIO")
+    print("\n¡Empezamos! Has elegido el nivel INTERMEDIO")
 
     import random
     numero = random.randint(0, 1000)
@@ -106,7 +106,7 @@ if nivel == 2:
 
 
 if nivel == 3:
-    print("¡Empezamos! Has elegido el nivel AVANZADO")
+    print("\n¡Empezamos! Has elegido el nivel AVANZADO")
 
     import random
     numero = random.randint(0, 1000000)
@@ -147,7 +147,7 @@ if nivel == 3:
 
 
 if nivel == 4:
-    print("¡Empezamos! Has elegido el nivel EXPERTO")
+    print("\n¡Empezamos! Has elegido el nivel EXPERTO")
 
     import random
     numero = random.randint(0, 1000000000000)
