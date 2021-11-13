@@ -10,13 +10,15 @@ print("""
 
     4) Nivel de dificultad experto (entre 0 y 1.000.000.000.000)
 
+    5) Nivel maestro IA
+
 """)
 
-nivel = int(input("Seleccione un nivel de dificultad, 1 2 3 o 4: \n "))
-if nivel > 4:
-    print("\nError. Hay 4 posibles niveles. Seleccione de nuevo el nivel: ")
+nivel = int(input("Seleccione un nivel de dificultad, 1 2 3 4 o IA: \n "))
+if nivel > 5:
+    print("\nError. Hay 5 posibles niveles. Seleccione de nuevo el nivel: ")
 elif nivel < 1 :
-    print("\nError. Hay 4 posibles niveles. Seleccione de nuevo el nivel: ")
+    print("\nError. Hay 5 posibles niveles. Seleccione de nuevo el nivel: ")
 
 
 
