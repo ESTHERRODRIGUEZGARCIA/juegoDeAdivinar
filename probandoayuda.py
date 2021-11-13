@@ -29,3 +29,32 @@ if ayuda == 1 and nivel == 1:
     print("bien")
 if ayuda == 2 and nivel == 1:
     print("sin ayuda")
+
+
+
+
+
+
+
+
+    if nivel < 1 or nivel > 4:
+        print("Error, el número debe estar entre el 0 y el 4 ")
+    if nivel <=1 or nivel >= 4:
+        print(" correcto")
+    if nivel == 5:
+        print("tontita no lo sabes hacer")
+    while nivel < 1 or nivel > 4:
+        print("Introduce otro nivel: ")
+        nivel = int(input()) 
+        if nivel < 1 or nivel > 4:
+            print("Error, el número debe estar entre el 0 y el 4 ")
+        if nivel <=1 or nivel >= 4:
+            print(" correcto")
+        if nivel == 5:
+            print("tontita no lo sabes hacer")
+            
+            if nivel <=1 or nivel >= 4:
+                    break
+    if nivel <=1 or nivel >= 4:
+        print("correctoooo")
+    
