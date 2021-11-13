@@ -26,7 +26,7 @@ nombre= str(input("Introduce tu nombre: "))
 
 
 if nivel == 1:
-    print("¡Empezamos! Has elegido el nivel simple")
+    print("¡Empezamos! Has elegido el nivel SIMPLE")
 
     import random
     numero = random.randint(0, 100)
@@ -63,8 +63,127 @@ if nivel == 1:
         print("Has superado el máximo de intentos. El número era: ", numero)
     else:
         print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
+        
+
+if nivel == 2:
+    print("¡Empezamos! Has elegido el nivel INTERMEDIO")
+
+    import random
+    numero = random.randint(0, 1000)
+    intentosRealizados = 0
+    maxintento = 25
+    
+    intento = int(input("Adivine el número: \n"))
+
+    if intento < 0 or intento > 1000:
+        intentosRealizados = intentosRealizados + 1
+        print("Error, el número debe estar entre el 0 y el 1000 ")
+    if intento < numero:
+        intentosRealizados = intentosRealizados + 1
+        print("Demasiado pequeño. ")
+    if intento > numero:
+        intentosRealizados = intentosRealizados + 1
+        print("Demasiado grande. ")
+    while intento != numero and intentosRealizados < maxintento:
+        print("Intenta adivinar el número: ")
+        intento = int(input()) 
+        if intento < 0 or intento > 1000:
+            intentosRealizados = intentosRealizados + 1
+            print("Error, el número debe estar entre el 0 y el 1000 ")
+        if intento < numero:
+            intentosRealizados = intentosRealizados + 1
+            print("Demasiado pequeño. ")
+        if intento > numero:
+            intentosRealizados = intentosRealizados + 1
+            print("Demasiado grande. ")
+
+            if intento == numero:
+                    break
+    if intentosRealizados == maxintento:
+        print("Has superado el máximo de intentos. El número era: ", numero)
+    else:
+        print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
 
 
+if nivel == 3:
+    print("¡Empezamos! Has elegido el nivel AVANZADO")
+
+    import random
+    numero = random.randint(0, 1000000)
+    intentosRealizados = 0
+    maxintento = 25
+    
+    intento = int(input("Adivine el número: \n"))
+
+    if intento < 0 or intento > 1000000:
+        intentosRealizados = intentosRealizados + 1
+        print("Error, el número debe estar entre el 0 y el 1000000 ")
+    if intento < numero:
+        intentosRealizados = intentosRealizados + 1
+        print("Demasiado pequeño. ")
+    if intento > numero:
+        intentosRealizados = intentosRealizados + 1
+        print("Demasiado grande. ")
+    while intento != numero and intentosRealizados < maxintento:
+        print("Intenta adivinar el número: ")
+        intento = int(input()) 
+        if intento < 0 or intento > 1000:
+            intentosRealizados = intentosRealizados + 1
+            print("Error, el número debe estar entre el 0 y el 1000000 ")
+        if intento < numero:
+            intentosRealizados = intentosRealizados + 1
+            print("Demasiado pequeño. ")
+        if intento > numero:
+            intentosRealizados = intentosRealizados + 1
+            print("Demasiado grande. ")
+
+            if intento == numero:
+                    break
+    if intentosRealizados == maxintento:
+        print("Has superado el máximo de intentos. El número era: ", numero)
+    else:
+        print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
+
+
+
+if nivel == 4:
+    print("¡Empezamos! Has elegido el nivel EXPERTO")
+
+    import random
+    numero = random.randint(0, 1000000000000)
+    intentosRealizados = 0
+    maxintento = 25
+    
+    intento = int(input("Adivine el número: \n"))
+
+    if intento < 0 or intento > 1000000000000:
+        intentosRealizados = intentosRealizados + 1
+        print("Error, el número debe estar entre el 0 y el 1000000000000 ")
+    if intento < numero:
+        intentosRealizados = intentosRealizados + 1
+        print("Demasiado pequeño. ")
+    if intento > numero:
+        intentosRealizados = intentosRealizados + 1
+        print("Demasiado grande. ")
+    while intento != numero and intentosRealizados < maxintento:
+        print("Intenta adivinar el número: ")
+        intento = int(input()) 
+        if intento < 0 or intento > 1000000000000:
+            intentosRealizados = intentosRealizados + 1
+            print("Error, el número debe estar entre el 0 y el 1000000000000 ")
+        if intento < numero:
+            intentosRealizados = intentosRealizados + 1
+            print("Demasiado pequeño. ")
+        if intento > numero:
+            intentosRealizados = intentosRealizados + 1
+            print("Demasiado grande. ")
+
+            if intento == numero:
+                    break
+    if intentosRealizados == maxintento:
+        print("Has superado el máximo de intentos. El número era: ", numero)
+    else:
+        print("¡Enhorabuena! Has acertado el número. Has realizado ", intentosRealizados, "intentos.")
 
 from tabulate import tabulate
 
