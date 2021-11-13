@@ -22,9 +22,10 @@ elif nivel < 1 :
 
 
 nombre = str(input("Introduce tu nombre: "))
-ayuda = str(input("¿Quiere jugar con una ayuda? \n Sí - Se muestra el número mínimo y máximo deducidos de las anteriores entradas \n No - rechazar \n "))
-
-if ayuda == 1 and nivel ==1:
+ayuda = str(input("¿Quiere jugar con una ayuda? \n 1 - Se muestra el número mínimo y máximo deducidos de las anteriores entradas \n 2 - rechazar \n "))
+if ayuda != 1 and 2:
+    print("Error, solo hay dos posibles respuestas: 1 y 2. ")
+if ayuda == 1 and nivel == 1:
     print("bien")
 if ayuda == 2 and nivel == 1:
     print("sin ayuda")
